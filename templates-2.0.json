@@ -3500,52 +3500,6 @@
         },
         {
             "category": [
-                "Downloaders",
-                "Video"
-            ],
-            "description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
-            "env": [
-                {
-                    "label": "PUID",
-                    "name": "PUID",
-                    "set": "1000"
-                },
-                {
-                    "label": "PGID",
-                    "name": "PGID",
-                    "set": "1000"
-                },
-                {
-                    "label": "TZ",
-                    "name": "TZ",
-                    "set": "America/Chicago"
-                }
-            ],
-            "image": "linuxserver/sonarr:latest",
-            "logo": "https://raw.githubusercontent.com/thesugarat/portainer_templates-1/master/Images/sonarr-icon.png",
-            "platform": "linux",
-            "ports": [
-                "8989/tcp"
-            ],
-            "title": "sonarr",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/config"
-                },
-                {
-                    "container": "/dev/rtc"
-                },
-                {
-                    "container": "/tv"
-                },
-                {
-                    "container": "/downloads"
-                }
-            ]
-        },
-        {
-            "category": [
                 "Other",
                 "Tools"
             ],
@@ -3737,69 +3691,6 @@
             "volumes": [
                 {
                     "container": "/config"
-                }
-            ]
-        },
-        {
-            "category": [
-                "Other",
-                "Tools",
-                "Photo"
-            ],
-            "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
-            "env": [
-                {
-                    "label": "PUID",
-                    "name": "PUID",
-                    "set": "1000"
-                },
-                {
-                    "label": "PGID",
-                    "name": "PGID",
-                    "set": "1000"
-                },
-                {
-                    "label": "CHEVERETO_DB_HOST",
-                    "name": "CHEVERETO_DB_HOST",
-                    "set": ""
-                },
-                {
-                    "label": "CHEVERETO_DB_USERNAME",
-                    "name": "CHEVERETO_DB_USERNAME",
-                    "set": ""
-                },
-                {
-                    "label": "CHEVERETO_DB_PASSWORD",
-                    "name": "CHEVERETO_DB_PASSWORD",
-                    "set": ""
-                },
-                {
-                    "label": "CHEVERETO_DB_NAME",
-                    "name": "CHEVERETO_DB_NAME",
-                    "set": ""
-                },
-                {
-                    "label": "CHEVERETO_DB_PREFIX",
-                    "name": "CHEVERETO_DB_PREFIX",
-                    "set": ""
-                },
-                {
-                    "label": "TZ",
-                    "name": "TZ",
-                    "set": "America/Chicago"
-                }
-            ],
-            "image": "nmtan/chevereto:latest",
-            "logo": "https://raw.githubusercontent.com/thesugarat/portainer_templates-1/master/Images/Chevereto.png",
-            "platform": "linux",
-            "ports": [
-                "80/tcp"
-            ],
-            "title": "Chevereto",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/var/www/html/images"
                 }
             ]
         },
