@@ -3084,55 +3084,6 @@
              "Backup:",
              "Cloud",
              "Other",
-             "Productivity",
-             "Tools"
-          ],
-          "description":"Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
-          "env":[
-             {
-                "label":"PUID",
-                "name":"PUID",
-                "set":"1000"
-             },
-             {
-                "label":"PGID",
-                "name":"PGID",
-                "set":"1000"
-             },
-             {
-                "label":"TZ",
-                "name":"TZ",
-                "set":"America/Chicago"
-             }
-          ],
-          "image":"linuxserver/duplicati:latest",
-          "logo":"https://raw.githubusercontent.com/thesugarat/portainer_templates-1/master/Images/duplicati-icon.png",
-          "platform":"linux",
-          "ports":[
-             "8200/tcp"
-          ],
-          "title":"duplicati",
-          "type":1,
-          "volumes":[
-             {
-                "container":"/config"
-             },
-             {
-                "container":"/tmp"
-             },
-             {
-                "container":"/backups"
-             },
-             {
-                "container":"/source"
-             }
-          ]
-       },
-       {
-          "category":[
-             "Backup:",
-             "Cloud",
-             "Other",
              "Tools"
           ],
           "description":"Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
