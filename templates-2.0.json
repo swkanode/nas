@@ -22,29 +22,6 @@
        },
        {
           "type":1,
-          "title":"Nginx",
-          "description":"High performance web server",
-          "categories":[
-             "webserver"
-          ],
-          "platform":"linux",
-          "logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
-          "image":"nginx:latest",
-          "ports":[
-             "80/tcp",
-             "443/tcp"
-          ],
-          "volumes":[
-             {
-                "container":"/etc/nginx"
-             },
-             {
-                "container":"/usr/share/nginx/html"
-             }
-          ]
-       },
-       {
-          "type":1,
           "title":"Httpd",
           "description":"Open-source HTTP server",
           "categories":[
@@ -3821,54 +3798,6 @@
                 "container":"/pictures"
              }
           ]
-       },
-       {
-          "categories":[
-             "Cloud",
-             "Productivity",
-             "Tools",
-             "Other",
-             "Web"
-          ],
-          "description":"Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-          "env":[
-             {
-                "default":"998",
-                "label":"PUID",
-                "name":"PUID"
-             },
-             {
-                "default":"100",
-                "label":"PGID",
-                "name":"PGID"
-             },
-             {
-                "label":"TZ",
-                "name":"TZ"
-             },
-             {
-                "label":"DATABASE_PASSWORD",
-                "name":"DATABASE_PASSWORD"
-             },
-             {
-                "label":"MYSQL_ROOT_PASSWORD",
-                "name":"MYSQL_ROOT_PASSWORD"
-             },
-             {
-                "label":"PORT",
-                "name":"PORT"
-             }
-          ],
-          "logo":"https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
-          "name":"nextcloud",
-          "note":"The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
-          "platform":"linux",
-          "repository":{
-             "stackfile":"Template/Stack/nextcloud.yml",
-             "url":"https://github.com/SelfhostedPro/selfhosted_templates"
-          },
-          "title":"Nextcloud",
-          "type":3
        },
        {
           "categories":[
