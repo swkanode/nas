@@ -2054,7 +2054,7 @@
              {
                 "label":"TZ",
                 "name":"TZ",
-                "set":"America/Chicago"
+                "set":"America/Los_Angles"
              }
           ],
           "image":"linuxserver/syncthing:latest",
@@ -2069,10 +2069,10 @@
           "type":1,
           "volumes":[
              {
-                "container":"/config"
+                "container":"/home"
              },
              {
-                "container":"/sync"
+                "container":"/srv/dev-disk-by-label-TechDrive/PiShare/Syncthing:/var/syncthing"
              }
           ]
        },
@@ -3085,7 +3085,7 @@
              "Cloud",
              "Other",
              "Tools"
-          ],
+          ],      
           "description":"Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
           "env":[
              {
